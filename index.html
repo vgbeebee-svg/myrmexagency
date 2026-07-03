@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myrmex Agency | Operated by Tiny Treasure Inc.</title>
-    <meta name="description" content="Official website for Myrmex Agency, a brand operated by Tiny Treasure Inc. Learn about the business, company details, and contact information.">
+    <meta name="description" content="Official website for Myrmex Agency, a brand operated by Tiny Treasure Inc.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg:#f7f3ea; --surface:rgba(255,255,255,.72); --surface-strong:rgba(255,255,255,.88); --ink:#182127; --muted:#5a6670; --accent:#0d7560; --accent-deep:#094f40; --line:rgba(24,33,39,.12); --shadow:0 18px 60px rgba(24,33,39,.12); --radius-lg:28px; --radius-md:18px; --max:1160px; }
+        :root { --bg:#f7f3ea; --surface:rgba(255,255,255,.78); --ink:#182127; --muted:#5a6670; --accent:#0d7560; --accent-deep:#094f40; --line:rgba(24,33,39,.12); --shadow:0 18px 60px rgba(24,33,39,.12); --radius:28px; --max:1160px; }
         * { box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
         body { margin:0; font-family:"Space Grotesk",sans-serif; color:var(--ink); background:radial-gradient(circle at top left, rgba(223,167,73,.18), transparent 28%), radial-gradient(circle at top right, rgba(13,117,96,.14), transparent 26%), linear-gradient(180deg, #fbf8f1 0%, #f4ecde 100%); }
         a { color:inherit; text-decoration:none; }
         .shell { width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
@@ -23,48 +22,35 @@
         .brand-name strong { font-size:.98rem; }
         .brand-name span { font-size:.72rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted); }
         .nav { display:flex; gap:24px; color:var(--muted); font-size:.95rem; }
-        .nav a:hover, .nav a:focus-visible { color:var(--ink); }
-        .menu-button { display:none; border:0; background:#fff; padding:10px 14px; border-radius:999px; box-shadow:var(--shadow); font:inherit; cursor:pointer; }
+        .nav a:hover { color:var(--ink); }
         .hero { padding:84px 0 36px; }
-        .hero-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:22px; align-items:stretch; }
-        .hero-card, .panel, .card { border-radius:var(--radius-lg); background:var(--surface); border:1px solid rgba(255,255,255,.75); box-shadow:var(--shadow); }
-        .hero-card { padding:42px; position:relative; overflow:hidden; }
-        .hero-card::after { content:""; position:absolute; top:-60px; right:-60px; width:190px; height:190px; border-radius:50%; background:radial-gradient(circle, rgba(223,167,73,.26), transparent 68%); }
-        .eyebrow { display:inline-flex; gap:10px; align-items:center; padding:8px 12px; border-radius:999px; background:rgba(13,117,96,.08); color:var(--accent-deep); font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-        h1, h2 { margin:16px 0; font-family:"Fraunces",serif; line-height:.98; letter-spacing:-.03em; }
-        h1 { font-size:clamp(2.8rem, 6vw, 5.6rem); max-width:11ch; }
-        h2 { font-size:clamp(2rem, 4vw, 3.3rem); }
-        h3 { margin:0 0 10px; font-size:1.16rem; }
-        .lead, .intro, .copy, .list li, .footer-row, .contact-list li { color:var(--muted); line-height:1.72; }
-        .lead { max-width:64ch; font-size:1.06rem; }
-        .cta-row { display:flex; flex-wrap:wrap; gap:14px; margin:26px 0 16px; }
-        .button, .button-secondary { min-height:48px; padding:0 18px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; font-weight:700; transition:transform 160ms ease; }
-        .button { background:linear-gradient(135deg, var(--accent), var(--accent-deep)); color:#fff; }
-        .button-secondary { background:var(--surface-strong); border:1px solid var(--line); }
-        .button:hover, .button-secondary:hover { transform:translateY(-1px); }
-        .stack { display:grid; gap:18px; }
-        .panel, .card { padding:28px; }
-        .label { display:block; margin-bottom:8px; color:var(--accent-deep); font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
-        .list, .contact-list { list-style:none; padding:0; margin:0; }
-        .list li, .contact-list li { padding:12px 0; border-bottom:1px solid var(--line); }
-        .list li:last-child, .contact-list li:last-child { border-bottom:0; }
-        .section { padding:32px 0; }
-        .grid-2, .grid-3 { display:grid; gap:20px; }
+        .hero-grid, .grid-2, .grid-3 { display:grid; gap:22px; }
+        .hero-grid { grid-template-columns:1.1fr .9fr; }
         .grid-2 { grid-template-columns:1fr 1fr; }
         .grid-3 { grid-template-columns:repeat(3, minmax(0, 1fr)); }
-        .notice { padding:18px 20px; border-left:4px solid var(--accent); border-radius:0 var(--radius-md) var(--radius-md) 0; background:rgba(13,117,96,.08); line-height:1.72; }
-        .contact-link { color:var(--accent-deep); font-weight:700; }
-        .site-footer { padding:34px 0 48px; }
+        .hero-card, .panel, .card { border-radius:var(--radius); background:var(--surface); border:1px solid rgba(255,255,255,.75); box-shadow:var(--shadow); }
+        .hero-card { padding:42px; }
+        .panel, .card { padding:28px; }
+        .eyebrow, .label { display:inline-flex; padding:8px 12px; border-radius:999px; background:rgba(13,117,96,.08); color:var(--accent-deep); font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+        .label { margin-bottom:10px; }
+        h1, h2 { margin:16px 0; font-family:"Fraunces",serif; line-height:.98; letter-spacing:-.03em; }
+        h1 { font-size:clamp(2.8rem, 6vw, 5.4rem); max-width:11ch; }
+        h2 { font-size:clamp(2rem, 4vw, 3.2rem); }
+        h3 { margin:0 0 10px; font-size:1.16rem; }
+        p, li { color:var(--muted); line-height:1.72; }
+        .cta-row { display:flex; flex-wrap:wrap; gap:14px; margin:24px 0 0; }
+        .button, .button-secondary { min-height:48px; padding:0 18px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; font-weight:700; }
+        .button { background:linear-gradient(135deg, var(--accent), var(--accent-deep)); color:#fff; }
+        .button-secondary { background:#fff; border:1px solid var(--line); }
+        .list { list-style:none; padding:0; margin:0; }
+        .list li { padding:12px 0; border-bottom:1px solid var(--line); }
+        .list li:last-child { border-bottom:0; }
+        .section { padding:32px 0; }
+        .notice { padding:18px 20px; border-left:4px solid var(--accent); border-radius:0 18px 18px 0; background:rgba(13,117,96,.08); }
+        .footer { padding:34px 0 48px; }
         .footer-row { border-top:1px solid var(--line); padding-top:22px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
         .footer-links { display:flex; gap:18px; flex-wrap:wrap; }
-        @media (max-width:920px) {
-            .hero-grid, .grid-2, .grid-3 { grid-template-columns:1fr; }
-            .menu-button { display:inline-flex; }
-            .nav { display:none; position:absolute; left:16px; right:16px; top:calc(100% + 8px); padding:14px; border-radius:22px; background:rgba(251,248,241,.97); border:1px solid var(--line); box-shadow:var(--shadow); flex-direction:column; align-items:flex-start; gap:12px; }
-            .nav.open { display:flex; }
-            .hero-card, .panel, .card { padding:24px; }
-            .footer-row { flex-direction:column; align-items:flex-start; }
-        }
+        @media (max-width:920px) { .hero-grid, .grid-2, .grid-3, .footer-row { grid-template-columns:1fr; display:grid; } .nav { display:none; } }
     </style>
 </head>
 <body>
@@ -77,139 +63,115 @@
                     <span>Operated by Tiny Treasure Inc.</span>
                 </span>
             </a>
-            <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-            <nav class="nav" id="primary-nav">
+            <nav class="nav">
                 <a href="#about">About</a>
                 <a href="#business">Business</a>
-                <a href="#company">Company Details</a>
+                <a href="#company">Company</a>
                 <a href="#contact">Contact</a>
                 <a href="privacy.html">Privacy</a>
                 <a href="terms.html">Terms</a>
             </nav>
         </div>
     </header>
-
     <main id="top">
         <section class="hero">
             <div class="shell hero-grid">
                 <article class="hero-card">
-                    <div class="eyebrow">Public Business Website</div>
+                    <div class="eyebrow">Official Business Website</div>
                     <h1>Myrmex Agency is operated by Tiny Treasure Inc.</h1>
-                    <p class="lead">This website presents Myrmex Agency as a public-facing brand operated by Tiny Treasure Inc. It is structured to make the connection between the brand, the legal entity, and the business contact details clear for public verification purposes, including Apple Developer organization enrollment.</p>
+                    <p>Myrmex Agency is a public-facing brand operated by Tiny Treasure Inc. This website provides company information, legal pages, and business contact details for customers, partners, reviewers, and platform verification.</p>
                     <div class="cta-row">
                         <a class="button" href="#contact">Contact the Company</a>
                         <a class="button-secondary" href="#company">View Company Details</a>
                     </div>
-                    <p class="copy">Before publishing, replace the placeholder phone number, business address, and business description with your real company information.</p>
                 </article>
-                <aside class="stack">
+                <aside class="grid-2" style="grid-template-columns:1fr;">
                     <section class="panel">
-                        <span class="label">Why This Lowers Risk</span>
+                        <span class="label">Public Brand and Legal Entity</span>
                         <ul class="list">
-                            <li>Shows `Myrmex Agency` as the public brand.</li>
-                            <li>Identifies `Tiny Treasure Inc.` as the legal entity behind the brand.</li>
-                            <li>Separates homepage content from legal policy pages.</li>
-                            <li>Reads like a business website, not a separate unrelated company.</li>
+                            <li>Public brand: Myrmex Agency</li>
+                            <li>Legal entity: Tiny Treasure Inc.</li>
+                            <li>Primary website: myrmexagency.com</li>
+                            <li>Business contact: contact@myrmexagency.com</li>
                         </ul>
                     </section>
                     <section class="panel">
-                        <span class="label">Apple-Facing Checklist</span>
+                        <span class="label">Verification Readiness</span>
                         <ul class="list">
-                            <li>Host on `myrmexagency.com`.</li>
-                            <li>Use a working email on that domain, such as contact@myrmexagency.com.</li>
-                            <li>Make sure the legal name matches your D-U-N-S record exactly.</li>
-                            <li>Keep all pages public and functional.</li>
+                            <li>Website is public and functional.</li>
+                            <li>Legal pages are accessible without login.</li>
+                            <li>Brand-to-company relationship is stated clearly.</li>
+                            <li>Domain email is used for contact.</li>
                         </ul>
                     </section>
                 </aside>
             </div>
         </section>
-
         <section class="section" id="about">
             <div class="shell">
                 <article class="card">
                     <span class="label">About</span>
-                    <h2>Explain the brand and the company in plain terms.</h2>
-                    <p class="intro">This section should explain what Myrmex Agency does while also making clear that the business is operated by Tiny Treasure Inc. Keep it factual: explain the services or products, the audience served, and how users, partners, or customers interact with the business. Avoid unsupported claims, platform name-dropping, or placeholder marketing language.</p>
-                    <div class="grid-2">
-                        <div>
-                            <h3>Recommended content</h3>
-                            <p class="copy">State whether Myrmex Agency develops apps, games, software tools, digital services, or another product category. Mention the business focus and the kind of products or services it operates.</p>
-                        </div>
-                        <div>
-                            <h3>Recommended tone</h3>
-                            <p class="copy">Use short, believable sentences. Apple reviewers do not need a dramatic pitch. They need to see a real organization with a public presence and consistent contact information.</p>
-                        </div>
-                    </div>
+                    <h2>Business identity presented in plain terms.</h2>
+                    <p>Myrmex Agency is operated by Tiny Treasure Inc. The business maintains a public website for company information, customer communication, legal policies, and related business activities.</p>
                 </article>
             </div>
         </section>
-
         <section class="section" id="business">
             <div class="shell">
                 <span class="label">Business Activities</span>
-                <h2>Substantial content without confusing the legal identity.</h2>
+                <h2>Substantial content without overclaiming.</h2>
                 <div class="grid-3">
-                    <article class="card"><h3>Product Development</h3><p class="copy">Summarize the software, applications, games, or digital tools Myrmex Agency designs, develops, and maintains.</p></article>
-                    <article class="card"><h3>Operations</h3><p class="copy">Note the business activities such as publishing, support, platform management, licensing, or customer service if those are real.</p></article>
-                    <article class="card"><h3>Brand Relationship</h3><p class="copy">Repeat clearly that Myrmex Agency is a brand operated by Tiny Treasure Inc. so the domain and the legal entity do not appear unrelated.</p></article>
+                    <article class="card"><h3>Digital Products and Services</h3><p>The company develops, manages, and supports digital products, online services, and related business operations.</p></article>
+                    <article class="card"><h3>Operations</h3><p>The business handles communication, support, platform operations, and related administrative activity through its public website and domain email channels.</p></article>
+                    <article class="card"><h3>Brand Relationship</h3><p>Myrmex Agency is a brand operated by Tiny Treasure Inc. References to Myrmex Agency on this site are references to the business operated by Tiny Treasure Inc.</p></article>
                 </div>
             </div>
         </section>
-
         <section class="section" id="company">
             <div class="shell grid-2">
                 <article class="card">
                     <span class="label">Company Details</span>
-                    <h2>Match the public site to the legal record.</h2>
+                    <h2>Public information</h2>
                     <ul class="list">
-                        <li><strong>Public Brand:</strong> Myrmex Agency</li>
-                        <li><strong>Legal Entity Name:</strong> Tiny Treasure Inc.</li>
-                        <li><strong>Website Domain:</strong> https://www.myrmexagency.com</li>
-                        <li><strong>Business Email:</strong> contact@myrmexagency.com</li>
-                        <li><strong>Business Phone:</strong> +1 (000) 000-0000</li>
-                        <li><strong>Business Address:</strong> Your real business address here</li>
+                        <li>Public brand: Myrmex Agency</li>
+                        <li>Legal entity: Tiny Treasure Inc.</li>
+                        <li>Website domain: https://myrmexagency.com</li>
+                        <li>General inquiries: contact@myrmexagency.com</li>
+                        <li>Business address: 59 East St, Hicksville, NY 11801, USA</li>
                     </ul>
                 </article>
                 <article class="card">
                     <span class="label">Publication Notes</span>
-                    <h2>What still matters outside the HTML.</h2>
-                    <div class="notice">Apple can only verify a real, public website. If the domain is `myrmexagency.com`, the site should repeatedly and clearly show that Myrmex Agency is operated by Tiny Treasure Inc.</div>
-                    <ul class="list" style="margin-top:18px;">
-                        <li>Do not publish with placeholders.</li>
-                        <li>Do not use a free email provider as the company contact address.</li>
-                        <li>Do not present `Myrmex Agency` as a different legal company from `Tiny Treasure Inc.` unless that is actually true.</li>
-                        <li>Keep the website accessible without login.</li>
-                    </ul>
+                    <h2>Consistency matters.</h2>
+                    <div class="notice">This website identifies Myrmex Agency as a brand operated by Tiny Treasure Inc. That relationship should match the information used in platform enrollment, support email, and any legal business records you provide.</div>
                 </article>
             </div>
         </section>
-
         <section class="section" id="contact">
             <div class="shell grid-2">
                 <article class="card">
                     <span class="label">Contact</span>
-                    <h2>Use direct, working business contact details.</h2>
-                    <ul class="contact-list">
-                        <li><strong>General Inquiries:</strong> <a class="contact-link" href="mailto:contact@myrmexagency.com">contact@myrmexagency.com</a></li>
-                        <li><strong>Business Phone:</strong> <a class="contact-link" href="tel:+10000000000">+1 (000) 000-0000</a></li>
-                        <li><strong>Business Address:</strong> Your real business address here</li>
+                    <h2>Business contact</h2>
+                    <ul class="list">
+                        <li>General inquiries: <a href="mailto:contact@myrmexagency.com">contact@myrmexagency.com</a></li>
+                        <li>Privacy: <a href="mailto:privacy@myrmexagency.com">privacy@myrmexagency.com</a></li>
+                        <li>Legal: <a href="mailto:legal@myrmexagency.com">legal@myrmexagency.com</a></li>
+                        <li>Address: 59 East St, Hicksville, NY 11801, USA</li>
                     </ul>
                 </article>
                 <article class="card">
                     <span class="label">Legal Pages</span>
-                    <h2>Separate pages improve credibility.</h2>
+                    <h2>Accessible public policies</h2>
                     <ul class="list">
-                        <li><a class="contact-link" href="privacy.html">Privacy Policy</a></li>
-                        <li><a class="contact-link" href="terms.html">Terms of Use</a></li>
-                        <li><a class="contact-link" href="copyright.html">Copyright / DMCA Policy</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="copyright.html">Copyright / DMCA Policy</a></li>
                     </ul>
                 </article>
             </div>
         </section>
     </main>
-
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="shell footer-row">
             <div>© <span id="year"></span> Myrmex Agency. Operated by Tiny Treasure Inc. All rights reserved.</div>
             <div class="footer-links">
@@ -219,15 +181,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const menuButton = document.getElementById("menu-button");
-        const nav = document.getElementById("primary-nav");
-        menuButton.addEventListener("click", () => {
-            const open = nav.classList.toggle("open");
-            menuButton.setAttribute("aria-expanded", String(open));
-        });
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
