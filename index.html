@@ -1,187 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myrmex Agency | Operated by Tiny Treasure Inc.</title>
-    <meta name="description" content="Official website for Myrmex Agency, a brand operated by Tiny Treasure Inc.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root { --bg:#f7f3ea; --surface:rgba(255,255,255,.78); --ink:#182127; --muted:#5a6670; --accent:#0d7560; --accent-deep:#094f40; --line:rgba(24,33,39,.12); --shadow:0 18px 60px rgba(24,33,39,.12); --radius:28px; --max:1160px; }
-        * { box-sizing:border-box; }
-        body { margin:0; font-family:"Space Grotesk",sans-serif; color:var(--ink); background:radial-gradient(circle at top left, rgba(223,167,73,.18), transparent 28%), radial-gradient(circle at top right, rgba(13,117,96,.14), transparent 26%), linear-gradient(180deg, #fbf8f1 0%, #f4ecde 100%); }
-        a { color:inherit; text-decoration:none; }
-        .shell { width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
-        .site-header { position:sticky; top:0; z-index:20; backdrop-filter:blur(16px); background:rgba(251,248,241,.84); border-bottom:1px solid var(--line); }
-        .header-row { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-        .brand { display:inline-flex; align-items:center; gap:12px; font-weight:700; }
-        .brand-mark { width:44px; height:44px; border-radius:14px; display:grid; place-items:center; color:#fff; background:linear-gradient(135deg, var(--accent), #d9a54f); box-shadow:var(--shadow); }
-        .brand-name { display:flex; flex-direction:column; line-height:1.05; }
-        .brand-name strong { font-size:.98rem; }
-        .brand-name span { font-size:.72rem; text-transform:uppercase; letter-spacing:.14em; color:var(--muted); }
-        .nav { display:flex; gap:24px; color:var(--muted); font-size:.95rem; }
-        .nav a:hover { color:var(--ink); }
-        .hero { padding:84px 0 36px; }
-        .hero-grid, .grid-2, .grid-3 { display:grid; gap:22px; }
-        .hero-grid { grid-template-columns:1.1fr .9fr; }
-        .grid-2 { grid-template-columns:1fr 1fr; }
-        .grid-3 { grid-template-columns:repeat(3, minmax(0, 1fr)); }
-        .hero-card, .panel, .card { border-radius:var(--radius); background:var(--surface); border:1px solid rgba(255,255,255,.75); box-shadow:var(--shadow); }
-        .hero-card { padding:42px; }
-        .panel, .card { padding:28px; }
-        .eyebrow, .label { display:inline-flex; padding:8px 12px; border-radius:999px; background:rgba(13,117,96,.08); color:var(--accent-deep); font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-        .label { margin-bottom:10px; }
-        h1, h2 { margin:16px 0; font-family:"Fraunces",serif; line-height:.98; letter-spacing:-.03em; }
-        h1 { font-size:clamp(2.8rem, 6vw, 5.4rem); max-width:11ch; }
-        h2 { font-size:clamp(2rem, 4vw, 3.2rem); }
-        h3 { margin:0 0 10px; font-size:1.16rem; }
-        p, li { color:var(--muted); line-height:1.72; }
-        .cta-row { display:flex; flex-wrap:wrap; gap:14px; margin:24px 0 0; }
-        .button, .button-secondary { min-height:48px; padding:0 18px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; font-weight:700; }
-        .button { background:linear-gradient(135deg, var(--accent), var(--accent-deep)); color:#fff; }
-        .button-secondary { background:#fff; border:1px solid var(--line); }
-        .list { list-style:none; padding:0; margin:0; }
-        .list li { padding:12px 0; border-bottom:1px solid var(--line); }
-        .list li:last-child { border-bottom:0; }
-        .section { padding:32px 0; }
-        .notice { padding:18px 20px; border-left:4px solid var(--accent); border-radius:0 18px 18px 0; background:rgba(13,117,96,.08); }
-        .footer { padding:34px 0 48px; }
-        .footer-row { border-top:1px solid var(--line); padding-top:22px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
-        .footer-links { display:flex; gap:18px; flex-wrap:wrap; }
-        @media (max-width:920px) { .hero-grid, .grid-2, .grid-3, .footer-row { grid-template-columns:1fr; display:grid; } .nav { display:none; } }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myrmex Agency | AI Video, Your Way</title>
+  <meta name="description" content="Explore AI video website access and video API access with Myrmex Agency. For individual creators, small teams, and API businesses. Contact us to discuss your needs.">
+  <meta name="theme-color" content="#123e32">
+  <link rel="canonical" href="https://myrmexagency.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f3ea;--ink:#18372e;--green:#123e32;--soft:#e8ede2;--muted:#53665c;--line:#ccd4c6;--lime:#d9ee9d;--max:1184px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Space Grotesk",Arial,sans-serif;font-size:16px;line-height:1.65}a{color:inherit}button,input,select,textarea{font:inherit}a,button,input,select,textarea,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #9a6417;outline-offset:5px}.shell{width:min(calc(100% - 64px),var(--max));margin:auto}.skip{position:absolute;left:12px;top:-100px;padding:12px;background:white;z-index:100}.skip:focus{top:12px}.header{position:sticky;top:0;z-index:20;background:rgba(247,243,234,.96);border-bottom:1px solid var(--line)}.header-row{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;gap:12px;align-items:center;text-decoration:none;line-height:1.2}.mark{width:42px;height:42px;background:var(--green);color:var(--lime);display:grid;place-items:center;border-radius:50%;font-size:14px;font-weight:700;letter-spacing:-1px}.brand strong{display:block;font-size:18px}.brand small{display:block;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-top:4px;color:var(--muted)}nav{display:flex;align-items:center;gap:28px}nav a{text-decoration:none;font-size:14px}nav a:hover{text-decoration:underline;text-underline-offset:6px}.button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:12px 23px;border:1px solid var(--green);background:var(--green);color:white;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;cursor:pointer;line-height:1.4}.button:hover{background:#205443}.button.light{background:transparent;color:var(--ink)}.button.light:hover{background:var(--soft)}nav .button{min-height:42px;padding:9px 18px}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--green);text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#628044}.hero{display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:70px;padding:80px 0 68px}h1,h2,h3,p{margin:0}h1,h2{font-family:"Fraunces",Georgia,serif;font-weight:500;letter-spacing:-2.8px;line-height:1.04}h1{font-size:clamp(54px,5.9vw,79px);margin:23px 0 24px}h1 em{font-weight:500;color:#54714d}h2{font-size:clamp(36px,4vw,52px);letter-spacing:-1.6px}h3{font-size:24px;letter-spacing:-.7px;line-height:1.2}.hero-copy>p{max-width:460px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.micro{font-size:12px!important;margin-top:17px!important;color:var(--muted)}.visual{position:relative;background:var(--green);color:white;min-height:420px;border-radius:12px;padding:27px;overflow:hidden}.visual-head,.visual-foot{display:flex;justify-content:space-between;align-items:center;font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:#d4dfcb}.visual-head span:last-child{border:1px solid #5d7867;border-radius:20px;padding:3px 8px}.scene{height:240px;position:relative;overflow:hidden;border-radius:7px;margin-top:24px;background:radial-gradient(ellipse at 68% 40%,#f9d9a5 0%,#d6c789 18%,#829a7c 45%,#456f62 70%)}.sun{position:absolute;top:36px;left:63%;width:56px;height:56px;border-radius:50%;background:#fff0c7;box-shadow:0 0 45px #f8dda7}.hill{position:absolute;width:440px;height:230px;bottom:-180px;left:-50px;background:#315a46;border-radius:48% 52% 0 0;transform:rotate(-17deg)}.hill.two{left:120px;bottom:-150px;background:#193f34;transform:rotate(20deg)}.hill.three{left:-100px;bottom:-195px;background:#102e25;transform:rotate(13deg)}.frame-corner{position:absolute;width:16px;height:16px;border:1px solid #eff6d9;z-index:2}.frame-corner.tl{top:13px;left:13px;border-right:0;border-bottom:0}.frame-corner.br{bottom:13px;right:13px;border-left:0;border-top:0}.scene-caption{position:absolute;bottom:15px;left:18px;z-index:3;font-size:10px;letter-spacing:1px;color:white}.prompt{position:relative;margin:-20px 12px 0;padding:16px 18px;background:#fcf9f1;color:var(--ink);border-radius:6px;z-index:4;box-shadow:0 10px 20px #062c2326;font-size:12px}.prompt span{display:block;color:var(--muted);font-size:9px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:4px}.visual-foot{margin-top:26px;font-size:9px}.strip{display:flex;justify-content:space-between;gap:18px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}.strip strong{font-weight:500;color:var(--ink)}.section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:45px;margin-bottom:34px}.section-head .eyebrow{margin-bottom:14px}.section-head>p{max-width:330px;color:var(--muted);font-size:14px}.paths{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}.path{padding:36px;background:#eeeee4;display:flex;flex-direction:column;align-items:flex-start}.path+ .path{border-left:1px solid var(--line);background:#e6ecdf}.path-top{display:flex;justify-content:space-between;align-items:center;width:100%;margin-bottom:30px}.path-number{font-family:"Fraunces",Georgia,serif;font-size:30px;color:#82917b}.tag{border:1px solid #bcc9b3;border-radius:30px;padding:3px 11px;font-size:10px;text-transform:uppercase;letter-spacing:1px}.path h3{font-family:"Fraunces",Georgia,serif;font-weight:500;font-size:34px}.path>p{color:var(--muted);font-size:14px;margin-top:15px;max-width:430px}.path ul{padding:0;list-style:none;margin:23px 0 29px;font-size:13px}.path li{padding:7px 0}.path li:before{content:'↗';margin-right:12px;color:#526b44}.path .button{margin-top:auto}.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:35px}.audience article{border-top:1px solid var(--line);padding-top:23px}.audience h3{font-size:18px}.audience p{font-size:14px;color:var(--muted);margin-top:12px}.journey{background:var(--green);color:var(--paper);border-radius:10px;padding:45px;display:grid;grid-template-columns:1fr 1.2fr;gap:70px}.journey h2{font-size:42px}.journey .eyebrow{color:var(--lime);margin-bottom:19px}.steps{list-style:none;margin:0;padding:0;counter-reset:step}.steps li{display:grid;grid-template-columns:29px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid #54705f}.steps li:first-child{padding-top:0}.steps li:last-child{border-bottom:0;padding-bottom:0}.steps li:before{counter-increment:step;content:'0' counter(step);font-size:11px;color:var(--lime);padding-top:4px}.steps strong{font-size:15px;font-weight:500}.steps p{font-size:13px;color:#c4d1bf;margin-top:5px}.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.faq .eyebrow{margin-bottom:17px}details{border-bottom:1px solid var(--line);padding:18px 0}details:first-child{border-top:1px solid var(--line)}summary{cursor:pointer;font-size:14px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px}summary::-webkit-details-marker{display:none}summary:after{content:'+';font-size:19px;font-weight:400}details[open] summary:after{content:'−'}details p{font-size:14px;color:var(--muted);padding:15px 30px 0 0}.contact-wrap{border-top:1px solid var(--line);padding:64px 0;display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-wrap .eyebrow{margin-bottom:18px}.contact-wrap p{color:var(--muted);font-size:14px;margin-top:20px}.contact-email{font-size:clamp(18px,2.1vw,26px);letter-spacing:-.6px;text-underline-offset:7px;overflow-wrap:anywhere}.contact-box{padding:28px;border:1px solid var(--line);border-radius:8px}.contact-box label{display:block;font-size:12px;font-weight:500;margin-bottom:7px}.contact-box select,.contact-box textarea{width:100%;background:#fffdf7;color:var(--ink);border:1px solid #a4b59b;border-radius:5px;padding:11px 12px;font-size:14px;margin-bottom:18px}.contact-box textarea{resize:vertical;min-height:102px}.contact-box .micro{margin-top:12px!important;font-size:11px!important}.company{background:#e8e9df;padding:31px 0}.company-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:25px;font-size:12px}.company strong{display:block;font-size:13px;margin-bottom:7px}.company p{color:var(--muted);font-size:12px}.company a{text-underline-offset:3px;overflow-wrap:anywhere}footer{padding:25px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.footer-links{display:flex;gap:20px}.footer-links a{text-decoration:none}.footer-links a:hover{text-decoration:underline}
+    @media(max-width:960px){.hero{gap:30px;padding-top:55px}h1{font-size:59px}.visual{padding:20px;min-height:390px}.scene{height:220px}.journey{gap:40px}.faq{gap:40px}nav{gap:18px}nav .company-nav{display:none}}
+    @media(max-width:700px){.shell{width:calc(100% - 36px)}.header-row{min-height:74px;gap:10px}.brand strong{font-size:15px}.brand small{font-size:8px;letter-spacing:1px}.mark{width:34px;height:34px}nav>a:not(.button){display:none}nav .button{padding:8px 12px;font-size:12px;min-height:40px}.hero{grid-template-columns:1fr;padding:45px 0 35px;gap:35px}h1{font-size:59px;max-width:510px}.hero-copy>p{font-size:16px}.visual{min-height:370px}.scene{height:220px}.strip{flex-wrap:wrap;justify-content:flex-start;gap:9px 25px}.strip>span:first-child{width:100%}.section{padding:48px 0}.section-head{display:block;margin-bottom:25px}.section-head>p{margin-top:18px}.paths{grid-template-columns:1fr}.path{padding:27px}.path+.path{border-left:0;border-top:1px solid var(--line)}.path-top{margin-bottom:18px}.audience{grid-template-columns:1fr;gap:22px}.audience p{margin-top:8px}.journey{grid-template-columns:1fr;padding:28px;gap:30px}.journey h2{font-size:37px}.faq{grid-template-columns:1fr;gap:25px}.contact-wrap{grid-template-columns:1fr;padding:46px 0;gap:28px}.company-grid{grid-template-columns:1fr;gap:20px}.footer-row{flex-direction:column;gap:12px}.actions .button{flex-grow:1}.contact-box{padding:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="shell header-row">
-            <a class="brand" href="#top" aria-label="Myrmex Agency home">
-                <span class="brand-mark">MA</span>
-                <span class="brand-name">
-                    <strong>Myrmex Agency</strong>
-                    <span>Operated by Tiny Treasure Inc.</span>
-                </span>
-            </a>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#business">Business</a>
-                <a href="#company">Company</a>
-                <a href="#contact">Contact</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-            </nav>
-        </div>
-    </header>
-    <main id="top">
-        <section class="hero">
-            <div class="shell hero-grid">
-                <article class="hero-card">
-                    <div class="eyebrow">Official Business Website</div>
-                    <h1>Myrmex Agency is operated by Tiny Treasure Inc.</h1>
-                    <p>Myrmex Agency is a public-facing brand operated by Tiny Treasure Inc. This website provides company information, legal pages, and business contact details for customers, partners, reviewers, and platform verification.</p>
-                    <div class="cta-row">
-                        <a class="button" href="#contact">Contact the Company</a>
-                        <a class="button-secondary" href="#company">View Company Details</a>
-                    </div>
-                </article>
-                <aside class="grid-2" style="grid-template-columns:1fr;">
-                    <section class="panel">
-                        <span class="label">Public Brand and Legal Entity</span>
-                        <ul class="list">
-                            <li>Public brand: Myrmex Agency</li>
-                            <li>Legal entity: Tiny Treasure Inc.</li>
-                            <li>Primary website: myrmexagency.com</li>
-                            <li>Business contact: contact@myrmexagency.com</li>
-                        </ul>
-                    </section>
-                    <section class="panel">
-                        <span class="label">Verification Readiness</span>
-                        <ul class="list">
-                            <li>Website is public and functional.</li>
-                            <li>Legal pages are accessible without login.</li>
-                            <li>Brand-to-company relationship is stated clearly.</li>
-                            <li>Domain email is used for contact.</li>
-                        </ul>
-                    </section>
-                </aside>
-            </div>
-        </section>
-        <section class="section" id="about">
-            <div class="shell">
-                <article class="card">
-                    <span class="label">About</span>
-                    <h2>Business identity presented in plain terms.</h2>
-                    <p>Myrmex Agency is operated by Tiny Treasure Inc. The business maintains a public website for company information, customer communication, legal policies, and related business activities.</p>
-                </article>
-            </div>
-        </section>
-        <section class="section" id="business">
-            <div class="shell">
-                <span class="label">Business Activities</span>
-                <h2>Substantial content without overclaiming.</h2>
-                <div class="grid-3">
-                    <article class="card"><h3>Digital Products and Services</h3><p>The company develops, manages, and supports digital products, online services, and related business operations.</p></article>
-                    <article class="card"><h3>Operations</h3><p>The business handles communication, support, platform operations, and related administrative activity through its public website and domain email channels.</p></article>
-                    <article class="card"><h3>Brand Relationship</h3><p>Myrmex Agency is a brand operated by Tiny Treasure Inc. References to Myrmex Agency on this site are references to the business operated by Tiny Treasure Inc.</p></article>
-                </div>
-            </div>
-        </section>
-        <section class="section" id="company">
-            <div class="shell grid-2">
-                <article class="card">
-                    <span class="label">Company Details</span>
-                    <h2>Public information</h2>
-                    <ul class="list">
-                        <li>Public brand: Myrmex Agency</li>
-                        <li>Legal entity: Tiny Treasure Inc.</li>
-                        <li>Website domain: https://myrmexagency.com</li>
-                        <li>General inquiries: contact@myrmexagency.com</li>
-                        <li>Business address: 59 East St, Hicksville, NY 11801, USA</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <span class="label">Publication Notes</span>
-                    <h2>Consistency matters.</h2>
-                    <div class="notice">This website identifies Myrmex Agency as a brand operated by Tiny Treasure Inc. That relationship should match the information used in platform enrollment, support email, and any legal business records you provide.</div>
-                </article>
-            </div>
-        </section>
-        <section class="section" id="contact">
-            <div class="shell grid-2">
-                <article class="card">
-                    <span class="label">Contact</span>
-                    <h2>Business contact</h2>
-                    <ul class="list">
-                        <li>General inquiries: <a href="mailto:contact@myrmexagency.com">contact@myrmexagency.com</a></li>
-                        <li>Privacy: <a href="mailto:privacy@myrmexagency.com">privacy@myrmexagency.com</a></li>
-                        <li>Legal: <a href="mailto:legal@myrmexagency.com">legal@myrmexagency.com</a></li>
-                        <li>Address: 59 East St, Hicksville, NY 11801, USA</li>
-                    </ul>
-                </article>
-                <article class="card">
-                    <span class="label">Legal Pages</span>
-                    <h2>Accessible public policies</h2>
-                    <ul class="list">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
-                        <li><a href="copyright.html">Copyright / DMCA Policy</a></li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="shell footer-row">
-            <div>&copy; <span id="year"></span> Myrmex Agency. Operated by Tiny Treasure Inc. All rights reserved.</div>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy</a>
-                <a href="terms.html">Terms</a>
-                <a href="copyright.html">Copyright</a>
-            </div>
-        </div>
-    </footer>
-    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header"><div class="shell header-row">
+    <a class="brand" href="#top" aria-label="Myrmex Agency home"><span class="mark" aria-hidden="true">MA</span><span><strong>Myrmex Agency</strong><small>Operated by Tiny Treasure Inc.</small></span></a>
+    <nav aria-label="Main navigation"><a href="#business">Ways to create</a><a class="company-nav" href="#company">Our company</a><a class="button" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main"><div class="shell" id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><div class="eyebrow"><span class="dot" aria-hidden="true"></span>For creators. For teams. For you.</div>
+        <h1 id="hero-title">AI video.<br><em>Your way.</em></h1>
+        <p>Create through a video website, or connect video generation to your own tools with API access. Tell us what you need—we’ll help you explore your options.</p>
+        <div class="actions"><a class="button" href="#business">Explore your options <span aria-hidden="true">↗</span></a><a class="button light" href="#contact">Talk to us</a></div>
+        <p class="micro">For individuals, small organizations, and API businesses.</p>
+      </div>
+      <div class="visual" role="img" aria-label="Illustrated creative concept: layered green hills beneath a warm sunset. This is an illustration, not a generated video sample.">
+        <div class="visual-head"><span>A little imagination goes a long way</span><span>Creative concept</span></div>
+        <div class="scene"><span class="sun"></span><span class="hill"></span><span class="hill two"></span><span class="hill three"></span><span class="frame-corner tl"></span><span class="frame-corner br"></span><span class="scene-caption">A STORY STARTS WITH AN IDEA.</span></div>
+        <div class="prompt"><span>Imagine this</span>“Quiet green hills. A golden sunset. A new beginning.”</div>
+        <div class="visual-foot"><span>Your idea → your next project</span><span>Illustration · not a video sample</span></div>
+      </div>
+    </section>
+    <div class="strip"><span>ONE CONVERSATION. <strong>YOUR NEXT STEP.</strong></span><span>Website access</span><span>API access</span><span>Business inquiries welcome</span></div>
+    <section class="section" id="business" aria-labelledby="paths-title">
+      <div class="section-head"><div><div class="eyebrow">Two ways to get started</div><h2 id="paths-title">Choose what works for you.</h2></div><p>Want to create directly, or build video into something of your own? Start here.</p></div>
+      <div class="paths">
+        <article class="path"><div class="path-top"><span class="path-number">01</span><span class="tag">Create on a website</span></div><h3>Just want to make videos?</h3><p>Ask about access to a video-generation website. A starting point for individuals and small teams who prefer creating through a website.</p><ul><li>Explore website-based video generation</li><li>Discuss access for yourself or your team</li><li>Ask which options suit your project</li></ul><a class="button light" href="mailto:contact@myrmexagency.com?subject=Website%20video%20access%20inquiry">Ask about website access <span aria-hidden="true">↗</span></a></article>
+        <article class="path"><div class="path-top"><span class="path-number">02</span><span class="tag">Connect with an API</span></div><h3>Building your own workflow?</h3><p>We also offer text-to-video API access. Tell us about the tool, service, or API business you’re building so we can discuss a suitable option.</p><ul><li>Discuss video generation for your tools</li><li>Share your integration requirements</li><li>Ask about access for your API business</li></ul><a class="button" href="mailto:contact@myrmexagency.com?subject=Video%20API%20access%20inquiry">Ask about API access <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+    <section id="about" aria-labelledby="audience-title"><div class="eyebrow">You don’t have to be a big company</div><h2 id="audience-title" style="margin-top:15px">Small beginnings welcome.</h2><div class="audience"><article><h3>Individual creators</h3><p>Have an idea for a video? Ask about website access and the options available for your project.</p></article><article><h3>Small teams & organizations</h3><p>Explore video generation for your content or projects. Tell us how your team wants to work.</p></article><article><h3>API businesses & resellers</h3><p>Looking for video API access for your service? Let’s discuss your requirements and applicable terms.</p></article></div></section>
+    <section class="section" aria-labelledby="steps-title"><div class="journey"><div><div class="eyebrow">Keep it simple</div><h2 id="steps-title">An idea.<br>A conversation.<br>A way forward.</h2></div><ol class="steps"><li><div><strong>Tell us what you have in mind.</strong><p>Website or API? One project or a team workflow? A short description is enough to start.</p></div></li><li><div><strong>Explore a suitable option.</strong><p>We’ll discuss available access, your requirements, and the details you need before deciding.</p></div></li><li><div><strong>Agree on the next step.</strong><p>Confirm access and applicable terms with us before getting started.</p></div></li></ol></div></section>
+    <section class="section faq" aria-labelledby="faq-title"><div><div class="eyebrow">A few helpful answers</div><h2 id="faq-title">New here?<br>You’re welcome.</h2></div><div>
+      <details><summary>Do I need to know how to use an API?</summary><p>You can ask about website access if you prefer creating through a website. API access is another option for customers connecting video generation to their own tools.</p></details>
+      <details><summary>Can I buy access as an individual?</summary><p>Yes, we welcome inquiries from individuals as well as small teams and businesses. Tell us what you want to create so we can discuss suitable access.</p></details>
+      <details><summary>Which models and video options can I use?</summary><p>Contact us with your project requirements. We’ll confirm the currently available options and relevant details before you choose.</p></details>
+      <details><summary>Can I use the videos for my business?</summary><p>Tell us how you plan to use them. Commercial usage depends on the selected service and its applicable terms, which need to be confirmed for your project.</p></details>
+      <details><summary>I run an API business. Can we talk?</summary><p>Absolutely. Share the kind of access you need, your expected usage, and your integration requirements. Any resale arrangement is subject to the applicable provider and service terms.</p></details>
+    </div></section>
+    <section id="contact" class="contact-wrap" aria-labelledby="contact-title"><div><div class="eyebrow">Let’s start with your idea</div><h2 id="contact-title">What would you<br>like to create?</h2><p>Tell us whether you’re interested in website access or API access, and a little about your project.</p><p><a class="contact-email" href="mailto:contact@myrmexagency.com">contact@myrmexagency.com</a></p></div>
+      <form class="contact-box" id="inquiry" action="mailto:contact@myrmexagency.com" method="get"><label for="interest">I’m interested in</label><select id="interest" name="subject"><option value="Website video access inquiry">Website access — I want to create videos</option><option value="Video API access inquiry">API access — I want to connect my tools</option><option value="API business inquiry">API business or reseller inquiry</option><option value="Video access inquiry">I’m not sure — let’s discuss</option></select><label for="message">A little about your project</label><textarea id="message" name="body" placeholder="What would you like to create or build?" maxlength="3000"></textarea><button class="button" type="submit">Write us an email <span aria-hidden="true">↗</span></button><p class="micro">Opens your email app with a draft. Nothing is sent from this page. You can also email us directly.</p></form>
+    </section>
+  </div></main>
+  <section class="company" id="company" aria-label="Company information"><div class="shell company-grid"><div><strong>Myrmex Agency</strong><p>A brand operated by Tiny Treasure Inc.<br>59 East St, Hicksville, NY 11801, USA</p></div><div><strong>Business inquiries</strong><p><a href="mailto:contact@myrmexagency.com">contact@myrmexagency.com</a><br><a href="https://myrmexagency.com/">myrmexagency.com</a></p></div><div><strong>Privacy & legal</strong><p><a href="mailto:privacy@myrmexagency.com">privacy@myrmexagency.com</a><br><a href="mailto:legal@myrmexagency.com">legal@myrmexagency.com</a></p></div></div></section>
+  <footer><div class="shell footer-row"><span>© <span id="year">2026</span> Myrmex Agency. Operated by Tiny Treasure Inc.</span><div class="footer-links"><a href="https://myrmexagency.com/privacy.html">Privacy</a><a href="https://myrmexagency.com/terms.html">Terms</a><a href="https://myrmexagency.com/copyright.html">Copyright / DMCA</a></div></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('inquiry').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const subject = document.getElementById('interest').value;
+      const body = document.getElementById('message').value.trim();
+      window.location.href = 'mailto:contact@myrmexagency.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  </script>
 </body>
 </html>
-
